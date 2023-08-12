@@ -98,16 +98,12 @@ olb()
 }
 
 
-// loading
-// function vvcv() {
-//     const loadingElement = document.getElementById("loading");
+let loading = document.getElementById("loading");
 
-   
-//     loadingElement.style.display = "block";
-
-    
-//     setTimeout(function () {
-//       loadingElement.style.display = "none";
-//     }, 2000);
-//   };
-//   vvcv()
+window.onload = function() {
+    loading.style.display="block"
+    setInterval(function() {
+       
+        loading.style.display="none"
+    }, 2000);
+}
